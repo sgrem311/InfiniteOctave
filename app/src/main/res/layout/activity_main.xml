@@ -18,7 +18,7 @@
         android:textSize="45sp" />
 
     <EditText
-        android:id="@+id/usernameInput"
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -33,7 +33,7 @@
         android:textColorHint="@color/white" />
 
     <EditText
-        android:id="@+id/passwordInput"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
