@@ -28,6 +28,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.octavesix.infiniteoctave.Spotify" />
         <activity android:name="com.octavesix.infiniteoctave.ProducerHome" />
         <activity android:name="com.octavesix.infiniteoctave.ListenerHome" />
         <activity android:name="com.octavesix.infiniteoctave.Register_Activity" />
