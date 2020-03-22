@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">InfiniteOctave</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="gender">Gender</string>
+    <string name="password">password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="checkbox">I agree to the terms....</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_producer_info">ProducerInfo</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

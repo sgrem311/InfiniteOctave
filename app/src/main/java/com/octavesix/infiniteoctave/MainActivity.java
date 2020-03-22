@@ -2,25 +2,35 @@ package com.octavesix.infiniteoctave;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.common.internal.AccountType;
 
 public class MainActivity extends AppCompatActivity {
     Button signIn;
     EditText username, password;
     TextView signUp, forgotPassword;
-    DatabaseHelper db;
-
+    DatabaseHelper database;
+    RadioButton listener;
+    RadioButton producer;
+    String accountType;
+    SQLiteDatabase db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        db = new DatabaseHelper(this);
+        database = new DatabaseHelper(this);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         signUp = findViewById(R.id.signUp);
@@ -31,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+        listener = findViewById(R.id.listener);
+        producer = findViewById(R.id.producer);
         signIn = findViewById(R.id.signIn);
         signIn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -40,10 +52,24 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Fields are empty", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    Boolean checkUsernamePassword = db.usernamePassword(Username, Password);
-                    if(checkUsernamePassword){
-                        Intent loginIntent = new Intent(MainActivity.this, Home_Activity.class);
-                        startActivity(loginIntent);
+                    Boolean checkUsernamePassword = database.usernamePassword(Username, Password);
+                    Cursor cursor = database.allData();
+                    while(!cursor.isAfterLast()) {
+                        cursor.moveToNext();
+                        if (cursor.getString(2).equals(Username)) {
+                            accountType = cursor.getString(11);
+                            break;
+                        }
+                    }
+                    if(checkUsernamePassword ){
+                        if(accountType.equals("Listener")) {
+                            Intent loginIntent = new Intent(MainActivity.this, ListenerHome.class);
+                            startActivity(loginIntent);
+                        }
+                        else if(accountType.equals("Producer")){
+                            Intent loginIntent = new Intent(MainActivity.this, ProducerHome.class);
+                            startActivity(loginIntent);
+                        }
                     }
                     else
                         Toast.makeText(MainActivity.this, "Wrong username or password", Toast.LENGTH_SHORT).show();
@@ -51,6 +77,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 
 }

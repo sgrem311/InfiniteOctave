@@ -3,24 +3,34 @@ package com.octavesix.infiniteoctave;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.google.android.gms.common.internal.AccountType;
 
 
 public class Register_Activity extends AppCompatActivity {
-    Button createAccount;
+    Button createAccount, cancel;
     EditText username, password, first, last, email, phoneNumber, country, state, birthDate, city, gender;
     DatabaseHelper db;
-
+    CheckBox terms;
+    RadioButton  radioButton, listener, producer;
+    RadioGroup radioGroup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registration);
         db = new DatabaseHelper(this);
         createAccount = findViewById(R.id.submit);
+        cancel = findViewById(R.id.cancel);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         first = findViewById(R.id.firstName);
@@ -32,8 +42,25 @@ public class Register_Activity extends AppCompatActivity {
         state = findViewById(R.id.state);
         birthDate = findViewById(R.id.BirthDate);
         city = findViewById(R.id.city);
+        terms = findViewById(R.id.checkBox);
+        listener = findViewById(R.id.listener);
+        producer = findViewById(R.id.producer);
+        radioGroup = findViewById(R.id.RGroup);
         addData();
+        cancel.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent registerIntent = new Intent(Register_Activity.this, MainActivity.class);
+                startActivity(registerIntent);
+            }
+        });
     }
+
+//    public String getAccountType(){
+//        int id = radioGroup.getCheckedRadioButtonId();
+//        radioButton = findViewById(id);
+//        accountType = radioButton.getText().toString();
+//        return accountType;
+//    }
     public void addData(){
         createAccount.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -48,23 +75,43 @@ public class Register_Activity extends AppCompatActivity {
                 String Phone = phoneNumber.getText().toString();
                 String Email = email.getText().toString();
                 String BirthDay = birthDate.getText().toString();
-                if(Username.equals("")||Password.equals("")||First.equals("")||Last.equals("")||Email.equals("")||Phone.equals("")){
+                int radioId = radioGroup.getCheckedRadioButtonId();
+                radioButton = findViewById(radioId);
+                String accountType = radioButton.getText().toString();
+                Cursor cursor = db.allData();
+
+                if(Username.equals("")||Password.equals("")||First.equals("")||Last.equals("")||Email.equals("") || !terms.isChecked() ){
                     Toast.makeText(Register_Activity.this, "Fields are empty", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Boolean checkUsername = db.checkUsername(Username);
                     if (checkUsername) {
-                        boolean isInserted = db.insertData(First, Last, Username, Password, Email, Country, City, State, Gender, Phone, BirthDay);
-                        if (isInserted) {
-                            Toast.makeText(Register_Activity.this, "Account created successfully", Toast.LENGTH_SHORT).show();
-                            Intent loginIntent = new Intent(Register_Activity.this, MainActivity.class);
-                            startActivity(loginIntent);
-                        } else
-                            Toast.makeText(Register_Activity.this, "Account not created", Toast.LENGTH_SHORT).show();
+                        if (cursor.getString(2).equals("Listener")) {
+                            boolean isInserted = db.insertData(First, Last, Username, Password, Email, Country, City, State, Gender, Phone, BirthDay, accountType);
+                            if (isInserted) {
+                                Toast.makeText(Register_Activity.this, "Account created successfully", Toast.LENGTH_SHORT).show();
+                                Intent loginIntent = new Intent(Register_Activity.this, MainActivity.class);
+                                startActivity(loginIntent);
+                            } else
+                                Toast.makeText(Register_Activity.this, "Account not created", Toast.LENGTH_SHORT).show();
+                        }
+                        if (cursor.getString(2).equals("Producer")) {
+                            boolean isInserted = db.insertData(First, Last, Username, Password, Email, Country, City, State, Gender, Phone, BirthDay, accountType);
+                            if (isInserted) {
+                                Toast.makeText(Register_Activity.this, "Account created successfully", Toast.LENGTH_SHORT).show();
+                                Intent loginIntent = new Intent(Register_Activity.this, MainActivity.class);
+                                startActivity(loginIntent);
+                            } else
+                                Toast.makeText(Register_Activity.this, "Account not created", Toast.LENGTH_SHORT).show();
                     }
+                    }
+
                 }
             }
         });
+    }
+    public void producerAccount(){
+        setContentView(R.layout.home_producer);
     }
 
 }

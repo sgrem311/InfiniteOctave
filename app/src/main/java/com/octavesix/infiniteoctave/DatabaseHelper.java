@@ -5,6 +5,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.view.View;
+import android.widget.RadioButton;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "Accounts.db";
@@ -20,6 +22,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String STATE = "STATE";
     public static final String GENDER = "GENDER";
     public static final String BIRTHDAY = "BIRTHDAY";
+    public static final String ACCOUNT = "ACCOUNT";
+
 
     public DatabaseHelper(Context context) {
         super(context,DATABASE_NAME,null, 1);
@@ -27,7 +31,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + TABLE_NAME +" (FIRST TEXT PRIMARY KEY, LAST TEXT, USERNAME TEXT, PASSWORD TEXT, EMAIL TEXT, COUNTRY TEXT, STATE TEXT, CITY TEXT, GENDER TEXT, PHONE INTEGER, BIRTHDAY INTEGER)");
+        db.execSQL("create table " + TABLE_NAME +" (FIRST TEXT PRIMARY KEY, LAST TEXT, USERNAME TEXT, PASSWORD TEXT, EMAIL TEXT, COUNTRY TEXT, STATE TEXT, CITY TEXT, GENDER TEXT, PHONE INTEGER, BIRTHDAY INTEGER, ACCOUNT TEXT)");
     }
 
     @Override
@@ -35,7 +39,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
-    public boolean insertData (String first, String last, String username, String password, String email, String country, String city, String state, String gender, String phone, String birthday){
+    public boolean insertData (String first, String last, String username, String password, String email, String country, String city, String state, String gender, String phone, String birthday, String account){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(FIRST, first);
@@ -49,6 +53,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(PHONE, phone);
         contentValues.put(GENDER, gender);
         contentValues.put(BIRTHDAY, birthday);
+        contentValues.put(ACCOUNT, account);
         long result = db.insert(TABLE_NAME, null, contentValues);
         if(result == -1)
             return false;
@@ -63,8 +68,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     public Boolean usernamePassword(String username, String password){
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("Select * from " + TABLE_NAME + " where username=? and password=?",new String[]{username, password});
+        Cursor cursor = db.rawQuery("Select * from " + TABLE_NAME + " where username=? and password=?", new String[]{username, password});
         if(cursor.getCount() > 0) return true;
         else return false;
+    }
+
+    public Cursor allData(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("Select * from " + TABLE_NAME, null );
+        return cursor;
     }
 }
