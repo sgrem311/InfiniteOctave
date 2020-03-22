@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProducerHome"></activity>
+        <activity android:name=".Spotify"></activity>
+        <activity android:name=".ProducerHome" />
         <activity android:name=".ListenerHome" />
         <activity android:name=".Register_Activity" />
         <activity android:name=".MainActivity">
