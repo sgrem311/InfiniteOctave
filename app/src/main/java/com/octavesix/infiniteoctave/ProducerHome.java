@@ -13,16 +13,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.Continuation;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
+//import com.google.android.gms.tasks.Continuation;
+//import com.google.android.gms.tasks.OnCompleteListener;
+//import com.google.android.gms.tasks.Task;
+//import com.google.firebase.firestore.FirebaseFirestore;
+//import com.google.firebase.storage.FirebaseStorage;
+//import com.google.firebase.storage.StorageReference;
+//import com.google.firebase.storage.UploadTask;
 
 public class ProducerHome extends AppCompatActivity {
-    private StorageReference mStorageRef;
+//    private StorageReference mStorageRef;
     private static final int PICK_IMAGE_CODE = 1000;
     Button upload;
     AlertDialog dialog;
@@ -54,7 +54,7 @@ public class ProducerHome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_producer);
-        mStorageRef = FirebaseStorage.getInstance().getReference("video_upload");
+//        mStorageRef = FirebaseStorage.getInstance().getReference("video_upload");
 //        upload = findViewById(R.id.upload);
 //        upload.setOnClickListener(new View.OnClickListener() {
 //            @Override

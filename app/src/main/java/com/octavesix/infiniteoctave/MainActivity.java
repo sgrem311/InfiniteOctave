@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     RadioButton listener;
     RadioButton producer;
     String accountType;
-    SQLiteDatabase db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
