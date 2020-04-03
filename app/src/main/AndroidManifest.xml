@@ -12,7 +12,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ProducerHome" />
         <activity android:name=".ListenerHome" />
-        <activity android:name=".Register_Activity" />
+        <activity android:name=".Register_Activity"
+            android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

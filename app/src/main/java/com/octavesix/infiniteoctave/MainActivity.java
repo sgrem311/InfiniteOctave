@@ -8,6 +8,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,6 +16,16 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.spotify.android.appremote.api.ConnectionParams;
+import com.spotify.android.appremote.api.Connector;
+import com.spotify.android.appremote.api.SpotifyAppRemote;
+
+import com.spotify.protocol.client.Subscription;
+import com.spotify.protocol.types.PlayerState;
+import com.spotify.protocol.types.Track;
 import com.google.android.gms.common.internal.AccountType;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,16 +44,22 @@ public class MainActivity extends AppCompatActivity {
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         signUp = findViewById(R.id.signUp);
+        signUp();
+        signIn();
+        listener = findViewById(R.id.listener);
+        producer = findViewById(R.id.producer);
+        signIn = findViewById(R.id.signIn);
+
+    }
+    public void signUp(){
         signUp.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent registerIntent = new Intent(MainActivity.this, Register_Activity.class);
                 startActivity(registerIntent);
             }
-
         });
-        listener = findViewById(R.id.listener);
-        producer = findViewById(R.id.producer);
-        signIn = findViewById(R.id.signIn);
+    }
+    public void signIn(){
         signIn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 String Username = username.getText().toString();
@@ -75,6 +92,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+    public void forgotPassword(){
+
     }
 
 }

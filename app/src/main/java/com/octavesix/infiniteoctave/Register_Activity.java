@@ -47,6 +47,9 @@ public class Register_Activity extends AppCompatActivity {
         producer = findViewById(R.id.producer);
         radioGroup = findViewById(R.id.RGroup);
         addData();
+        cancel();
+    }
+    public void cancel(){
         cancel.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent registerIntent = new Intent(Register_Activity.this, MainActivity.class);
@@ -54,13 +57,6 @@ public class Register_Activity extends AppCompatActivity {
             }
         });
     }
-
-//    public String getAccountType(){
-//        int id = radioGroup.getCheckedRadioButtonId();
-//        radioButton = findViewById(id);
-//        accountType = radioButton.getText().toString();
-//        return accountType;
-//    }
     public void addData(){
         createAccount.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -78,40 +74,28 @@ public class Register_Activity extends AppCompatActivity {
                 int radioId = radioGroup.getCheckedRadioButtonId();
                 radioButton = findViewById(radioId);
                 String accountType = radioButton.getText().toString();
-                Cursor cursor = db.allData();
-
                 if(Username.equals("")||Password.equals("")||First.equals("")||Last.equals("")||Email.equals("") || !terms.isChecked() ){
                     Toast.makeText(Register_Activity.this, "Fields are empty", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Boolean checkUsername = db.checkUsername(Username);
                     if (checkUsername) {
-                        if (cursor.getString(2).equals("Listener")) {
-                            boolean isInserted = db.insertData(First, Last, Username, Password, Email, Country, City, State, Gender, Phone, BirthDay, accountType);
-                            if (isInserted) {
+                        boolean isInserted = db.insertData(First, Last, Username, Password, Email, Country, City, State, Gender, Phone, BirthDay, accountType);
+                            if (isInserted && accountType.equals("Listener")) {
+                                Toast.makeText(Register_Activity.this, "Account created successfully", Toast.LENGTH_SHORT).show();
+                                Intent loginIntent = new Intent(Register_Activity.this, MainActivity.class);
+                                startActivity(loginIntent);
+                            } else if(isInserted && accountType.equals("Producer")) {
                                 Toast.makeText(Register_Activity.this, "Account created successfully", Toast.LENGTH_SHORT).show();
                                 Intent loginIntent = new Intent(Register_Activity.this, MainActivity.class);
                                 startActivity(loginIntent);
                             } else
                                 Toast.makeText(Register_Activity.this, "Account not created", Toast.LENGTH_SHORT).show();
-                        }
-                        if (cursor.getString(2).equals("Producer")) {
-                            boolean isInserted = db.insertData(First, Last, Username, Password, Email, Country, City, State, Gender, Phone, BirthDay, accountType);
-                            if (isInserted) {
-                                Toast.makeText(Register_Activity.this, "Account created successfully", Toast.LENGTH_SHORT).show();
-                                Intent loginIntent = new Intent(Register_Activity.this, MainActivity.class);
-                                startActivity(loginIntent);
-                            } else
-                                Toast.makeText(Register_Activity.this, "Account not created", Toast.LENGTH_SHORT).show();
-                    }
-                    }
 
+                    }
                 }
             }
         });
     }
-    public void producerAccount(){
-        setContentView(R.layout.home_producer);
-    }
-
 }
+
