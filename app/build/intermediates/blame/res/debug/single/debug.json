@@ -1,23 +1,15 @@
 [
     {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_graph.xml.flat",
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\navigation\\nav_graph.xml"
-    },
-    {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_artist5.jpg.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\artist5.jpg"
     },
     {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_album1.jpg.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\album1.jpg"
     },
     {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\layout_navdrawer.xml.flat",
@@ -32,6 +24,94 @@
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\instagram.png"
     },
     {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_artist3.jpg.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\artist3.jpg"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_item.xml.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\layout\\row_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_collab.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\collab.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_artist4.jpg.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\artist4.jpg"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_stats05.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\stats05.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navbar.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\navbar.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_goldstar2.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\goldstar2.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_adam.jpg.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\adam.jpg"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\layout_registration.xml.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\layout\\registration.xml"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_headset.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\headset.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_upload.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\upload.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bell.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\bell.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_album3.jpg.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\album3.jpg"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_artist5.jpg.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\artist5.jpg"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_file.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\file.png"
+    },
+    {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_artist1.jpg.flat",
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\artist1.jpg"
     },
@@ -44,36 +124,28 @@
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.jpg.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\background.jpg"
+    },
+    {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_producer_info.xml.flat",
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\layout\\activity_producer_info.xml"
-    },
-    {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_artist3.jpg.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\artist3.jpg"
-    },
-    {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\logo.png"
-    },
-    {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_star.png.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\star.png"
-    },
-    {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_star.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\star.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_album2.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\album2.png"
     },
     {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\layout_home_producer.xml.flat",
@@ -88,16 +160,8 @@
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\layout\\home_layout.xml"
     },
     {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_home.jpg.flat",
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\home.jpg"
-    },
-    {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_artist4.jpg.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\artist4.jpg"
     },
     {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -108,28 +172,12 @@
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\goldstar1.png"
     },
     {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_artist2.jpg.flat",
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\artist2.jpg"
     },
     {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navbar.png.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\navbar.png"
-    },
-    {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_goldstar2.png.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\goldstar2.png"
-    },
-    {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\layout_registration.xml.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\layout\\registration.xml"
-    },
-    {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_headset.png.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\headset.png"
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\add.png"
     },
     {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",

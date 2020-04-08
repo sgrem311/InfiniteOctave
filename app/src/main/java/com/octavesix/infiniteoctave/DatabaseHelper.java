@@ -8,22 +8,28 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME = "Accounts.db";
-    public static final String TABLE_NAME = "account_table";
-    public static final String FIRST = "FIRST";
-    public static final String LAST = "LAST";
-    public static final String USERNAME = "USERNAME";
-    public static final String PASSWORD = "PASSWORD";
-    public static final String EMAIL = "EMAIL";
-    public static final String PHONE = "PHONE";
-    public static final String COUNTRY = "COUNTRY";
-    public static final String CITY = "CITY";
-    public static final String STATE = "STATE";
-    public static final String GENDER = "GENDER";
-    public static final String BIRTHDAY = "BIRTHDAY";
-    public static final String ACCOUNT = "ACCOUNT";
+    private static final String DATABASE_NAME = "Accounts.db";
+    private static final String TABLE_NAME = "account_table";
+    private static final String FIRST = "FIRST";
+    private static final String LAST = "LAST";
+    private static final String USERNAME = "USERNAME";
+    private static final String PASSWORD = "PASSWORD";
+    private static final String EMAIL = "EMAIL";
+    private static final String PHONE = "PHONE";
+    private static final String COUNTRY = "COUNTRY";
+    private static final String CITY = "CITY";
+    private static final String STATE = "STATE";
+    private static final String GENDER = "GENDER";
+    private static final String BIRTHDAY = "BIRTHDAY";
+    private static final String ACCOUNT = "ACCOUNT";
+    private static DatabaseHelper mInstance = null;
 
-
+    public static DatabaseHelper getInstance(Context ctx) {
+        if (mInstance == null) {
+            mInstance = new DatabaseHelper(ctx.getApplicationContext());
+        }
+        return mInstance;
+    }
     public DatabaseHelper(Context context) {
         super(context,DATABASE_NAME,null, 1);
     }

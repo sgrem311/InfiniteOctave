@@ -47,9 +47,6 @@ public class Register_Activity extends AppCompatActivity {
         producer = findViewById(R.id.producer);
         radioGroup = findViewById(R.id.RGroup);
         addData();
-        cancel();
-    }
-    public void cancel(){
         cancel.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent registerIntent = new Intent(Register_Activity.this, MainActivity.class);

@@ -1,16 +1,22 @@
 package com.octavesix.infiniteoctave;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.google.firebase.firestore.ListenerRegistration;
 
 public class ListenerHome extends AppCompatActivity {
     boolean clicked1 = false;
     boolean clicked2 = false;
     boolean clicked3 = false;
     boolean clicked4 = false;
+
     ImageButton starButton1, starButton2, starButton3, starButton4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
