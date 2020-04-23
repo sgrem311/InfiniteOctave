@@ -30,7 +30,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         return mInstance;
     }
-    public DatabaseHelper(Context context) {
+    private DatabaseHelper(Context context) {
         super(context,DATABASE_NAME,null, 1);
     }
 

@@ -3,5 +3,5 @@ package com.octavesix.infiniteoctave;
 import java.util.Iterator;
 
 public interface Container {
-    public Iterator createIterator();
+    public Iterator getIterator();
 }

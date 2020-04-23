@@ -1478,6 +1478,7 @@ drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable twitter
+drawable twitter_50px
 drawable upload
 id ALT
 id BOTTOM_END
@@ -1550,8 +1551,16 @@ id adjust_width
 id alertTitle
 id all
 id always
+id artist1
+id artist2
+id artist3
+id artist5
 id async
 id auto
+id bandName
+id bandName2
+id bandName3
+id bandName4
 id barrier
 id beginning
 id biography
@@ -1601,6 +1610,7 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id divide6
 id divider
 id divider2
 id divider3
@@ -1639,6 +1649,7 @@ id hideable
 id home
 id homeAsUp
 id homeScreen
+id horizontalScroll
 id icon
 id icon_group
 id icon_only
@@ -1651,6 +1662,7 @@ id imageButton4
 id imageButton5
 id imageButton6
 id imageView
+id imageView1
 id imageView11
 id imageView12
 id imageView13
@@ -1671,6 +1683,7 @@ id left
 id light
 id line1
 id line3
+id linearLayout
 id listMode
 id list_item
 id listener
@@ -1742,7 +1755,6 @@ id producer
 id progress_circular
 id progress_horizontal
 id radio
-id recyclerView
 id right
 id right_icon
 id right_side
@@ -1784,6 +1796,10 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id songName
+id songName2
+id songName3
+id songName4
 id spacer
 id split_action_bar
 id spread
@@ -1847,6 +1863,10 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id twitter
+id twitter2
+id twitter3
+id twitter4
 id unchecked
 id uniform
 id unlabeled
@@ -1978,7 +1998,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout registration
-layout row_item
+layout row_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

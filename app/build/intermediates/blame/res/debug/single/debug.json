@@ -24,20 +24,16 @@
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\instagram.png"
     },
     {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_artist3.jpg.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\artist3.jpg"
-    },
-    {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\logo.png"
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_artist3.jpg.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\artist3.jpg"
     },
     {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_item.xml.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\layout\\row_item.xml"
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\logo.png"
     },
     {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_collab.png.flat",
@@ -54,6 +50,10 @@
     {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_artist4.jpg.flat",
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\artist4.jpg"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_layout.xml.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\layout\\row_layout.xml"
     },
     {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_stats05.png.flat",
@@ -76,12 +76,12 @@
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\adam.jpg"
     },
     {
-        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\layout_registration.xml.flat",
-        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\layout\\registration.xml"
-    },
-    {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_headset.png.flat",
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\headset.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\layout_registration.xml.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\layout\\registration.xml"
     },
     {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_upload.png.flat",
@@ -110,6 +110,10 @@
     {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_file.png.flat",
         "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\file.png"
+    },
+    {
+        "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_twitter_50px.png.flat",
+        "source": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\src\\main\\res\\drawable\\twitter_50px.png"
     },
     {
         "merged": "C:\\Users\\siarr\\AndroidStudioProjects\\InfiniteOctave\\app\\build\\intermediates\\res\\merged\\debug\\drawable_artist1.jpg.flat",

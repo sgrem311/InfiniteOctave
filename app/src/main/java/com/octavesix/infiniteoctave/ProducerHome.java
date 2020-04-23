@@ -22,18 +22,9 @@ import java.util.ArrayList;
 
 public class ProducerHome extends AppCompatActivity {
     Button upload;
-    private MediaPlayer mediaPlayer;
-    SongStorage songStorage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_producer);
-        songStorage = new SongStorage();
-    }
-    public void playList(){
-        SongIterator iterator = new SongIterator(songStorage.getSongs());
-        while(iterator.hasNext()){
-            Song s = iterator.next();
-        }
     }
 }

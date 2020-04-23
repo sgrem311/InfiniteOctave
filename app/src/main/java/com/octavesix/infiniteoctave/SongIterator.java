@@ -1,5 +1,6 @@
 package com.octavesix.infiniteoctave;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class SongIterator implements Iterator<Song> {
@@ -20,9 +21,10 @@ public class SongIterator implements Iterator<Song> {
     }
     public void remove(){
         for(int i = index-1; i<songs.length-1; i++){
-            songs[i] = songs[i+1];
+            songs[i]=songs[i+1];
         }
         songs[songs.length-1] = null;
     }
+
 
 }

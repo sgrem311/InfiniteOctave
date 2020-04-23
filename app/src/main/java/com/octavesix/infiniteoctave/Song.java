@@ -3,15 +3,14 @@ package com.octavesix.infiniteoctave;
 public class Song {
     private String name;
     private String bandName;
-    private int image;
-    public Song(String songName, int image){
+    public Song(String songName, String bandName){
         this.name = songName;
-        this.image = image;
+        this.bandName = bandName;
     }
     public String getName(){
         return name;
     }
-    public int getImage(){
-        return image;
+    public String getArtist(){
+        return bandName;
     }
 }

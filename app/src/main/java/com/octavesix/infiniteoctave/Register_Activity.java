@@ -28,7 +28,7 @@ public class Register_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registration);
-        db = new DatabaseHelper(this);
+        db = DatabaseHelper.getInstance(this);
         createAccount = findViewById(R.id.submit);
         cancel = findViewById(R.id.cancel);
         username = findViewById(R.id.username);

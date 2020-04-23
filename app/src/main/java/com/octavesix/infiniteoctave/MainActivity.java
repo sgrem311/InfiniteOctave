@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        db = new DatabaseHelper(this);
+        db = DatabaseHelper.getInstance(this);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         signUp = findViewById(R.id.signUp);
